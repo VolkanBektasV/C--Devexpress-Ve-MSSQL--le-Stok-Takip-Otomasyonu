@@ -1,0 +1,7 @@
+   Admin
+Kullanıcı Adı : 11111111111   ( 11 Tane 1)
+Şifre : 123 
+
+Veri Tabanı Database Klasörünün içinde import ederek kullanabilirsiniz.
+Class Yardimci.cs İçinde Bulunan Connection string düzenlemeniz Gerekebilir.
+

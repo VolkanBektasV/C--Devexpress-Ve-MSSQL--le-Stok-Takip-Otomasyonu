@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27ED786A-EAD6-404A-B12B-AC3AA33A475D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StokTakipProjesi</RootNamespace>
+    <AssemblyName>StokTakipProjesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Presets, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1484.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bankalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bankalar.Designer.cs">
+      <DependentUpon>Bankalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depolar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depolar.Designer.cs">
+      <DependentUpon>Depolar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faturalar.Designer.cs">
+      <DependentUpon>Faturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaUrunDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaUrunDetay.Designer.cs">
+      <DependentUpon>FaturaUrunDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaUrunGuncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaUrunGuncelleSil.Designer.cs">
+      <DependentUpon>FaturaUrunGuncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giderler.Designer.cs">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hareketler.Designer.cs">
+      <DependentUpon>Hareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullaniciislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullaniciislemleri.Designer.cs">
+      <DependentUpon>Kullaniciislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personeller.Designer.cs">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personelsec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personelsec.Designer.cs">
+      <DependentUpon>Personelsec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rehber.Designer.cs">
+      <DependentUpon>Rehber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Stoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stoklar.Designer.cs">
+      <DependentUpon>Stoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokUrunSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokUrunSec.Designer.cs">
+      <DependentUpon>StokUrunSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaUrunSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaUrunSec.Designer.cs">
+      <DependentUpon>FaturaUrunSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeknolojiMagazaDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeknolojiMagazaDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urunler.Designer.cs">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yardimci.cs" />
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bankalar.resx">
+      <DependentUpon>Bankalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depolar.resx">
+      <DependentUpon>Depolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faturalar.resx">
+      <DependentUpon>Faturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaUrunDetay.resx">
+      <DependentUpon>FaturaUrunDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaUrunGuncelleSil.resx">
+      <DependentUpon>FaturaUrunGuncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giderler.resx">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hareketler.resx">
+      <DependentUpon>Hareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullaniciislemleri.resx">
+      <DependentUpon>Kullaniciislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personeller.resx">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonellerRapor.rdlc" />
+    <EmbeddedResource Include="Personelsec.resx">
+      <DependentUpon>Personelsec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rehber.resx">
+      <DependentUpon>Rehber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatilanUrunRapor.rdlc" />
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stoklar.resx">
+      <DependentUpon>Stoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokRapor.rdlc" />
+    <EmbeddedResource Include="StokUrunSec.resx">
+      <DependentUpon>StokUrunSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaUrunSec.resx">
+      <DependentUpon>FaturaUrunSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunler.resx">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerRapor.rdlc" />
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TeknolojiMagazaDbDataSet.xsc">
+      <DependentUpon>TeknolojiMagazaDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TeknolojiMagazaDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TeknolojiMagazaDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TeknolojiMagazaDbDataSet.xss">
+      <DependentUpon>TeknolojiMagazaDbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_address.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_document.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_phone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewsettings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeequickwelcome.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_product_group.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_position.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bar3d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_manhattanbar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currency.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipmentreceived.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_department.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeequickwelcome1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_position1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_contract.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_list.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_document1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_country_v92.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodepartment_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesanalysis_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boreport2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boreport2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_manhattanbar1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_product.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_rangebar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_swiftplot.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bar3d1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_opportunity.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_dollar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_security.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pies.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_product_group1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_removecircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_mydetails.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_price_item.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_cash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\withtextwrapping_topleft_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablelayout_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newsales_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetredtoblack4_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_pie3d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detailed.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resetlayoutoptions.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_order_item.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productquickshippments.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeequickwelcome2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_cash1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_lead.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_person.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\close_16x16.png" />
+    <None Include="Resources\cancel_32x321.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\ihracat.jpg" />
+    <None Include="Resources\bo_user1.svg" />
+    <None Include="Resources\bo_user.svg" />
+    <None Include="Resources\viewsettings1.svg" />
+    <None Include="Resources\bo_customer.svg" />
+    <None Include="Resources\bo_person1.svg" />
+    <None Include="Resources\refresh_32x322.png" />
+    <None Include="Resources\bo_product_group2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_product_group3.svg" />
+    <None Include="Resources\bo_position2.svg" />
+    <None Include="Resources\charttype_pie.svg" />
+    <None Include="Resources\bo_sale4.svg" />
+    <None Include="Resources\bo_product_group4.svg" />
+    <None Include="Resources\bo_sale5.svg" />
+    <None Include="Resources\charttype_pie3d1.svg" />
+    <None Include="Resources\bo_product_group5.svg" />
+    <None Include="Resources\charttype_pie3d2.svg" />
+    <None Include="Resources\bo_sale6.svg" />
+    <None Include="Resources\bo_position3.svg" />
+    <None Include="Resources\iconsetredtoblack4_32x32.png" />
+    <None Include="Resources\iconsetredtoblack4_16x161.png" />
+    <None Include="Resources\iconsetredtoblack4_32x321.png" />
+    <None Include="Resources\iconsetredtoblack4_16x162.png" />
+    <None Include="Resources\operatingsystem_16x16.png" />
+    <None Include="Resources\operatingsystem_32x32.png" />
+    <None Include="Resources\redwhiteblue_16x16.png" />
+    <None Include="Resources\redwhiteblue_32x32.png" />
+    <None Include="Resources\greenwhite_16x16.png" />
+    <None Include="Resources\greenwhite_32x32.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TeknolojiMagazaDbDataSet" targetNamespace="http://tempuri.org/TeknolojiMagazaDbDataSet.xsd" xmlns:mstns="http://tempuri.org/TeknolojiMagazaDbDataSet.xsd" xmlns="http://tempuri.org/TeknolojiMagazaDbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TeknolojiMagazaDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TeknolojiMagazaDbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StokTakipProjesi.Properties.Settings.GlobalReference.Default.TeknolojiMagazaDbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PersonellerRaporTableAdapter" GeneratorDataComponentClassName="PersonellerRaporTableAdapter" Name="PersonellerRapor" UserDataComponentName="PersonellerRaporTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TeknolojiMagazaDbConnectionString (Settings)" DbObjectName="TeknolojiMagazaDb.dbo.PersonellerRapor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, ADI, SOYADI, TELEFON, TC, YAŞ, CİNSİYET, MAİLADRES, İL, İLÇE, AÇIKADRES, GOREV, BİRİM, İŞEGİRİŞTARİH, MAAŞ FROM dbo.PersonellerRapor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="ADI" DataSetColumn="ADI" />
+              <Mapping SourceColumn="SOYADI" DataSetColumn="SOYADI" />
+              <Mapping SourceColumn="TELEFON" DataSetColumn="TELEFON" />
+              <Mapping SourceColumn="TC" DataSetColumn="TC" />
+              <Mapping SourceColumn="YAŞ" DataSetColumn="YAŞ" />
+              <Mapping SourceColumn="CİNSİYET" DataSetColumn="CİNSİYET" />
+              <Mapping SourceColumn="MAİLADRES" DataSetColumn="MAİLADRES" />
+              <Mapping SourceColumn="İL" DataSetColumn="İL" />
+              <Mapping SourceColumn="İLÇE" DataSetColumn="İLÇE" />
+              <Mapping SourceColumn="AÇIKADRES" DataSetColumn="AÇIKADRES" />
+              <Mapping SourceColumn="GOREV" DataSetColumn="GOREV" />
+              <Mapping SourceColumn="BİRİM" DataSetColumn="BİRİM" />
+              <Mapping SourceColumn="İŞEGİRİŞTARİH" DataSetColumn="İŞEGİRİŞTARİH" />
+              <Mapping SourceColumn="MAAŞ" DataSetColumn="MAAŞ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SatilanUrunlerRaporTableAdapter" GeneratorDataComponentClassName="SatilanUrunlerRaporTableAdapter" Name="SatilanUrunlerRapor" UserDataComponentName="SatilanUrunlerRaporTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TeknolojiMagazaDbConnectionString (Settings)" DbObjectName="TeknolojiMagazaDb.dbo.SatilanUrunlerRapor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT URUNID, STOKID, STOKKOD, MARKA, KOD, KATEGORİ1, KATEGORİ2, Adet, SATİSFİYAT, TOPLAMTUTAR, FATURAID FROM dbo.SatilanUrunlerRapor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="URUNID" DataSetColumn="URUNID" />
+              <Mapping SourceColumn="STOKID" DataSetColumn="STOKID" />
+              <Mapping SourceColumn="STOKKOD" DataSetColumn="STOKKOD" />
+              <Mapping SourceColumn="MARKA" DataSetColumn="MARKA" />
+              <Mapping SourceColumn="KOD" DataSetColumn="KOD" />
+              <Mapping SourceColumn="KATEGORİ1" DataSetColumn="KATEGORİ1" />
+              <Mapping SourceColumn="KATEGORİ2" DataSetColumn="KATEGORİ2" />
+              <Mapping SourceColumn="Adet" DataSetColumn="Adet" />
+              <Mapping SourceColumn="SATİSFİYAT" DataSetColumn="SATİSFİYAT" />
+              <Mapping SourceColumn="TOPLAMTUTAR" DataSetColumn="TOPLAMTUTAR" />
+              <Mapping SourceColumn="FATURAID" DataSetColumn="FATURAID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StokTablosuRaporTableAdapter" GeneratorDataComponentClassName="StokTablosuRaporTableAdapter" Name="StokTablosuRapor" UserDataComponentName="StokTablosuRaporTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TeknolojiMagazaDbConnectionString (Settings)" DbObjectName="TeknolojiMagazaDb.dbo.StokTablosuRapor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT StokID, StokKod, UrunID, MARKA, URUNKOD, KATEGORİ1, KATEGORİ2, KATEGORİ3, URUNACIKLAMA, ADET, ALIŞFİYAT, SATIŞFİYAT, TARİH, DepoAdi FROM dbo.StokTablosuRapor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StokID" DataSetColumn="StokID" />
+              <Mapping SourceColumn="StokKod" DataSetColumn="StokKod" />
+              <Mapping SourceColumn="UrunID" DataSetColumn="UrunID" />
+              <Mapping SourceColumn="MARKA" DataSetColumn="MARKA" />
+              <Mapping SourceColumn="URUNKOD" DataSetColumn="URUNKOD" />
+              <Mapping SourceColumn="KATEGORİ1" DataSetColumn="KATEGORİ1" />
+              <Mapping SourceColumn="KATEGORİ2" DataSetColumn="KATEGORİ2" />
+              <Mapping SourceColumn="KATEGORİ3" DataSetColumn="KATEGORİ3" />
+              <Mapping SourceColumn="URUNACIKLAMA" DataSetColumn="URUNACIKLAMA" />
+              <Mapping SourceColumn="ADET" DataSetColumn="ADET" />
+              <Mapping SourceColumn="ALIŞFİYAT" DataSetColumn="ALIŞFİYAT" />
+              <Mapping SourceColumn="SATIŞFİYAT" DataSetColumn="SATIŞFİYAT" />
+              <Mapping SourceColumn="TARİH" DataSetColumn="TARİH" />
+              <Mapping SourceColumn="DepoAdi" DataSetColumn="DepoAdi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UrunlerRaporTableAdapter" GeneratorDataComponentClassName="UrunlerRaporTableAdapter" Name="UrunlerRapor" UserDataComponentName="UrunlerRaporTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TeknolojiMagazaDbConnectionString (Settings)" DbObjectName="TeknolojiMagazaDb.dbo.UrunlerRapor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, MARKASI, KODU, KATEGORİ1, KATEGORİ2, KATEGORİ3, AÇIKLAMA FROM dbo.UrunlerRapor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="MARKASI" DataSetColumn="MARKASI" />
+              <Mapping SourceColumn="KODU" DataSetColumn="KODU" />
+              <Mapping SourceColumn="KATEGORİ1" DataSetColumn="KATEGORİ1" />
+              <Mapping SourceColumn="KATEGORİ2" DataSetColumn="KATEGORİ2" />
+              <Mapping SourceColumn="KATEGORİ3" DataSetColumn="KATEGORİ3" />
+              <Mapping SourceColumn="AÇIKLAMA" DataSetColumn="AÇIKLAMA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TeknolojiMagazaDbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TeknolojiMagazaDbDataSet" msprop:Generator_UserDSName="TeknolojiMagazaDbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PersonellerRapor" msprop:Generator_TableClassName="PersonellerRaporDataTable" msprop:Generator_TableVarName="tablePersonellerRapor" msprop:Generator_TablePropName="PersonellerRapor" msprop:Generator_RowDeletingName="PersonellerRaporRowDeleting" msprop:Generator_RowChangingName="PersonellerRaporRowChanging" msprop:Generator_RowEvHandlerName="PersonellerRaporRowChangeEventHandler" msprop:Generator_RowDeletedName="PersonellerRaporRowDeleted" msprop:Generator_UserTableName="PersonellerRapor" msprop:Generator_RowChangedName="PersonellerRaporRowChanged" msprop:Generator_RowEvArgName="PersonellerRaporRowChangeEvent" msprop:Generator_RowClassName="PersonellerRaporRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="ADI" msprop:Generator_ColumnVarNameInTable="columnADI" msprop:Generator_ColumnPropNameInRow="ADI" msprop:Generator_ColumnPropNameInTable="ADIColumn" msprop:Generator_UserColumnName="ADI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SOYADI" msprop:Generator_ColumnVarNameInTable="columnSOYADI" msprop:Generator_ColumnPropNameInRow="SOYADI" msprop:Generator_ColumnPropNameInTable="SOYADIColumn" msprop:Generator_UserColumnName="SOYADI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEFON" msprop:Generator_ColumnVarNameInTable="columnTELEFON" msprop:Generator_ColumnPropNameInRow="TELEFON" msprop:Generator_ColumnPropNameInTable="TELEFONColumn" msprop:Generator_UserColumnName="TELEFON" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TC" msprop:Generator_ColumnVarNameInTable="columnTC" msprop:Generator_ColumnPropNameInRow="TC" msprop:Generator_ColumnPropNameInTable="TCColumn" msprop:Generator_UserColumnName="TC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YAŞ" msprop:Generator_ColumnVarNameInTable="columnYAŞ" msprop:Generator_ColumnPropNameInRow="YAŞ" msprop:Generator_ColumnPropNameInTable="YAŞColumn" msprop:Generator_UserColumnName="YAŞ" type="xs:int" minOccurs="0" />
+              <xs:element name="CİNSİYET" msprop:Generator_ColumnVarNameInTable="columnCİNSİYET" msprop:Generator_ColumnPropNameInRow="CİNSİYET" msprop:Generator_ColumnPropNameInTable="CİNSİYETColumn" msprop:Generator_UserColumnName="CİNSİYET" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAİLADRES" msprop:Generator_ColumnVarNameInTable="columnMAİLADRES" msprop:Generator_ColumnPropNameInRow="MAİLADRES" msprop:Generator_ColumnPropNameInTable="MAİLADRESColumn" msprop:Generator_UserColumnName="MAİLADRES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İL" msprop:Generator_ColumnVarNameInTable="columnİL" msprop:Generator_ColumnPropNameInRow="İL" msprop:Generator_ColumnPropNameInTable="İLColumn" msprop:Generator_UserColumnName="İL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İLÇE" msprop:Generator_ColumnVarNameInTable="columnİLÇE" msprop:Generator_ColumnPropNameInRow="İLÇE" msprop:Generator_ColumnPropNameInTable="İLÇEColumn" msprop:Generator_UserColumnName="İLÇE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AÇIKADRES" msprop:Generator_ColumnVarNameInTable="columnAÇIKADRES" msprop:Generator_ColumnPropNameInRow="AÇIKADRES" msprop:Generator_ColumnPropNameInTable="AÇIKADRESColumn" msprop:Generator_UserColumnName="AÇIKADRES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GOREV" msprop:Generator_ColumnVarNameInTable="columnGOREV" msprop:Generator_ColumnPropNameInRow="GOREV" msprop:Generator_ColumnPropNameInTable="GOREVColumn" msprop:Generator_UserColumnName="GOREV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BİRİM" msprop:Generator_ColumnVarNameInTable="columnBİRİM" msprop:Generator_ColumnPropNameInRow="BİRİM" msprop:Generator_ColumnPropNameInTable="BİRİMColumn" msprop:Generator_UserColumnName="BİRİM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İŞEGİRİŞTARİH" msprop:Generator_ColumnVarNameInTable="columnİŞEGİRİŞTARİH" msprop:Generator_ColumnPropNameInRow="İŞEGİRİŞTARİH" msprop:Generator_ColumnPropNameInTable="İŞEGİRİŞTARİHColumn" msprop:Generator_UserColumnName="İŞEGİRİŞTARİH" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MAAŞ" msprop:Generator_ColumnVarNameInTable="columnMAAŞ" msprop:Generator_ColumnPropNameInRow="MAAŞ" msprop:Generator_ColumnPropNameInTable="MAAŞColumn" msprop:Generator_UserColumnName="MAAŞ" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SatilanUrunlerRapor" msprop:Generator_TableClassName="SatilanUrunlerRaporDataTable" msprop:Generator_TableVarName="tableSatilanUrunlerRapor" msprop:Generator_TablePropName="SatilanUrunlerRapor" msprop:Generator_RowDeletingName="SatilanUrunlerRaporRowDeleting" msprop:Generator_RowChangingName="SatilanUrunlerRaporRowChanging" msprop:Generator_RowEvHandlerName="SatilanUrunlerRaporRowChangeEventHandler" msprop:Generator_RowDeletedName="SatilanUrunlerRaporRowDeleted" msprop:Generator_UserTableName="SatilanUrunlerRapor" msprop:Generator_RowChangedName="SatilanUrunlerRaporRowChanged" msprop:Generator_RowEvArgName="SatilanUrunlerRaporRowChangeEvent" msprop:Generator_RowClassName="SatilanUrunlerRaporRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="URUNID" msprop:Generator_ColumnVarNameInTable="columnURUNID" msprop:Generator_ColumnPropNameInRow="URUNID" msprop:Generator_ColumnPropNameInTable="URUNIDColumn" msprop:Generator_UserColumnName="URUNID" type="xs:int" />
+              <xs:element name="STOKID" msprop:Generator_ColumnVarNameInTable="columnSTOKID" msprop:Generator_ColumnPropNameInRow="STOKID" msprop:Generator_ColumnPropNameInTable="STOKIDColumn" msprop:Generator_UserColumnName="STOKID" type="xs:int" />
+              <xs:element name="STOKKOD" msprop:Generator_ColumnVarNameInTable="columnSTOKKOD" msprop:Generator_ColumnPropNameInRow="STOKKOD" msprop:Generator_ColumnPropNameInTable="STOKKODColumn" msprop:Generator_UserColumnName="STOKKOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MARKA" msprop:Generator_ColumnVarNameInTable="columnMARKA" msprop:Generator_ColumnPropNameInRow="MARKA" msprop:Generator_ColumnPropNameInTable="MARKAColumn" msprop:Generator_UserColumnName="MARKA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KOD" msprop:Generator_ColumnVarNameInTable="columnKOD" msprop:Generator_ColumnPropNameInRow="KOD" msprop:Generator_ColumnPropNameInTable="KODColumn" msprop:Generator_UserColumnName="KOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ1" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ1" msprop:Generator_ColumnPropNameInRow="KATEGORİ1" msprop:Generator_ColumnPropNameInTable="KATEGORİ1Column" msprop:Generator_UserColumnName="KATEGORİ1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ2" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ2" msprop:Generator_ColumnPropNameInRow="KATEGORİ2" msprop:Generator_ColumnPropNameInTable="KATEGORİ2Column" msprop:Generator_UserColumnName="KATEGORİ2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adet" msprop:Generator_ColumnVarNameInTable="columnAdet" msprop:Generator_ColumnPropNameInRow="Adet" msprop:Generator_ColumnPropNameInTable="AdetColumn" msprop:Generator_UserColumnName="Adet" type="xs:int" minOccurs="0" />
+              <xs:element name="SATİSFİYAT" msprop:Generator_ColumnVarNameInTable="columnSATİSFİYAT" msprop:Generator_ColumnPropNameInRow="SATİSFİYAT" msprop:Generator_ColumnPropNameInTable="SATİSFİYATColumn" msprop:Generator_UserColumnName="SATİSFİYAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOPLAMTUTAR" msprop:Generator_ColumnVarNameInTable="columnTOPLAMTUTAR" msprop:Generator_ColumnPropNameInRow="TOPLAMTUTAR" msprop:Generator_ColumnPropNameInTable="TOPLAMTUTARColumn" msprop:Generator_UserColumnName="TOPLAMTUTAR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FATURAID" msprop:Generator_ColumnVarNameInTable="columnFATURAID" msprop:Generator_ColumnPropNameInRow="FATURAID" msprop:Generator_ColumnPropNameInTable="FATURAIDColumn" msprop:Generator_UserColumnName="FATURAID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StokTablosuRapor" msprop:Generator_TableClassName="StokTablosuRaporDataTable" msprop:Generator_TableVarName="tableStokTablosuRapor" msprop:Generator_TablePropName="StokTablosuRapor" msprop:Generator_RowDeletingName="StokTablosuRaporRowDeleting" msprop:Generator_RowChangingName="StokTablosuRaporRowChanging" msprop:Generator_RowEvHandlerName="StokTablosuRaporRowChangeEventHandler" msprop:Generator_RowDeletedName="StokTablosuRaporRowDeleted" msprop:Generator_UserTableName="StokTablosuRapor" msprop:Generator_RowChangedName="StokTablosuRaporRowChanged" msprop:Generator_RowEvArgName="StokTablosuRaporRowChangeEvent" msprop:Generator_RowClassName="StokTablosuRaporRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StokID" msprop:Generator_ColumnVarNameInTable="columnStokID" msprop:Generator_ColumnPropNameInRow="StokID" msprop:Generator_ColumnPropNameInTable="StokIDColumn" msprop:Generator_UserColumnName="StokID" type="xs:int" />
+              <xs:element name="StokKod" msprop:Generator_ColumnVarNameInTable="columnStokKod" msprop:Generator_ColumnPropNameInRow="StokKod" msprop:Generator_ColumnPropNameInTable="StokKodColumn" msprop:Generator_UserColumnName="StokKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UrunID" msprop:Generator_ColumnVarNameInTable="columnUrunID" msprop:Generator_ColumnPropNameInRow="UrunID" msprop:Generator_ColumnPropNameInTable="UrunIDColumn" msprop:Generator_UserColumnName="UrunID" type="xs:int" />
+              <xs:element name="MARKA" msprop:Generator_ColumnVarNameInTable="columnMARKA" msprop:Generator_ColumnPropNameInRow="MARKA" msprop:Generator_ColumnPropNameInTable="MARKAColumn" msprop:Generator_UserColumnName="MARKA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URUNKOD" msprop:Generator_ColumnVarNameInTable="columnURUNKOD" msprop:Generator_ColumnPropNameInRow="URUNKOD" msprop:Generator_ColumnPropNameInTable="URUNKODColumn" msprop:Generator_UserColumnName="URUNKOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ1" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ1" msprop:Generator_ColumnPropNameInRow="KATEGORİ1" msprop:Generator_ColumnPropNameInTable="KATEGORİ1Column" msprop:Generator_UserColumnName="KATEGORİ1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ2" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ2" msprop:Generator_ColumnPropNameInRow="KATEGORİ2" msprop:Generator_ColumnPropNameInTable="KATEGORİ2Column" msprop:Generator_UserColumnName="KATEGORİ2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ3" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ3" msprop:Generator_ColumnPropNameInRow="KATEGORİ3" msprop:Generator_ColumnPropNameInTable="KATEGORİ3Column" msprop:Generator_UserColumnName="KATEGORİ3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="URUNACIKLAMA" msprop:Generator_ColumnVarNameInTable="columnURUNACIKLAMA" msprop:Generator_ColumnPropNameInRow="URUNACIKLAMA" msprop:Generator_ColumnPropNameInTable="URUNACIKLAMAColumn" msprop:Generator_UserColumnName="URUNACIKLAMA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADET" msprop:Generator_ColumnVarNameInTable="columnADET" msprop:Generator_ColumnPropNameInRow="ADET" msprop:Generator_ColumnPropNameInTable="ADETColumn" msprop:Generator_UserColumnName="ADET" type="xs:int" minOccurs="0" />
+              <xs:element name="ALIŞFİYAT" msprop:Generator_ColumnVarNameInTable="columnALIŞFİYAT" msprop:Generator_ColumnPropNameInRow="ALIŞFİYAT" msprop:Generator_ColumnPropNameInTable="ALIŞFİYATColumn" msprop:Generator_UserColumnName="ALIŞFİYAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SATIŞFİYAT" msprop:Generator_ColumnVarNameInTable="columnSATIŞFİYAT" msprop:Generator_ColumnPropNameInRow="SATIŞFİYAT" msprop:Generator_ColumnPropNameInTable="SATIŞFİYATColumn" msprop:Generator_UserColumnName="SATIŞFİYAT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TARİH" msprop:Generator_ColumnVarNameInTable="columnTARİH" msprop:Generator_ColumnPropNameInRow="TARİH" msprop:Generator_ColumnPropNameInTable="TARİHColumn" msprop:Generator_UserColumnName="TARİH" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DepoAdi" msprop:Generator_ColumnVarNameInTable="columnDepoAdi" msprop:Generator_ColumnPropNameInRow="DepoAdi" msprop:Generator_ColumnPropNameInTable="DepoAdiColumn" msprop:Generator_UserColumnName="DepoAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UrunlerRapor" msprop:Generator_TableClassName="UrunlerRaporDataTable" msprop:Generator_TableVarName="tableUrunlerRapor" msprop:Generator_TablePropName="UrunlerRapor" msprop:Generator_RowDeletingName="UrunlerRaporRowDeleting" msprop:Generator_RowChangingName="UrunlerRaporRowChanging" msprop:Generator_RowEvHandlerName="UrunlerRaporRowChangeEventHandler" msprop:Generator_RowDeletedName="UrunlerRaporRowDeleted" msprop:Generator_UserTableName="UrunlerRapor" msprop:Generator_RowChangedName="UrunlerRaporRowChanged" msprop:Generator_RowEvArgName="UrunlerRaporRowChangeEvent" msprop:Generator_RowClassName="UrunlerRaporRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="MARKASI" msprop:Generator_ColumnVarNameInTable="columnMARKASI" msprop:Generator_ColumnPropNameInRow="MARKASI" msprop:Generator_ColumnPropNameInTable="MARKASIColumn" msprop:Generator_UserColumnName="MARKASI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KODU" msprop:Generator_ColumnVarNameInTable="columnKODU" msprop:Generator_ColumnPropNameInRow="KODU" msprop:Generator_ColumnPropNameInTable="KODUColumn" msprop:Generator_UserColumnName="KODU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ1" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ1" msprop:Generator_ColumnPropNameInRow="KATEGORİ1" msprop:Generator_ColumnPropNameInTable="KATEGORİ1Column" msprop:Generator_UserColumnName="KATEGORİ1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ2" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ2" msprop:Generator_ColumnPropNameInRow="KATEGORİ2" msprop:Generator_ColumnPropNameInTable="KATEGORİ2Column" msprop:Generator_UserColumnName="KATEGORİ2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATEGORİ3" msprop:Generator_ColumnVarNameInTable="columnKATEGORİ3" msprop:Generator_ColumnPropNameInRow="KATEGORİ3" msprop:Generator_ColumnPropNameInTable="KATEGORİ3Column" msprop:Generator_UserColumnName="KATEGORİ3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AÇIKLAMA" msprop:Generator_ColumnVarNameInTable="columnAÇIKLAMA" msprop:Generator_ColumnPropNameInRow="AÇIKLAMA" msprop:Generator_ColumnPropNameInTable="AÇIKLAMAColumn" msprop:Generator_UserColumnName="AÇIKLAMA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PersonellerRapor" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="UrunlerRapor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:UrunlerRapor" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
